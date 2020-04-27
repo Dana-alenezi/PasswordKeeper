@@ -3,19 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FBC00012443B93F00450D33 /* SaveAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC00002443B93F00450D33 /* SaveAccount.swift */; };
+		4FBC0003244F3A7B00450D33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FBC0002244F3A7B00450D33 /* GoogleService-Info.plist */; };
+		4FBC00052451D19B00450D33 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC00042451D19B00450D33 /* Networking.swift */; };
 		4FBCFFE7244383EF00450D33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBCFFE6244383EF00450D33 /* AppDelegate.swift */; };
 		4FBCFFE9244383EF00450D33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBCFFE8244383EF00450D33 /* SceneDelegate.swift */; };
 		4FBCFFEB244383EF00450D33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBCFFEA244383EF00450D33 /* ContentView.swift */; };
 		4FBCFFED244383F500450D33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FBCFFEC244383F500450D33 /* Assets.xcassets */; };
 		4FBCFFF0244383F500450D33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FBCFFEF244383F500450D33 /* Preview Assets.xcassets */; };
 		4FBCFFF3244383F500450D33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FBCFFF1244383F500450D33 /* LaunchScreen.storyboard */; };
+		4FBCFFFE2443B8DD00450D33 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBCFFFD2443B8DD00450D33 /* Account.swift */; };
+		582DAB81BE4AD01966BC012A /* Pods_PasswordKeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66137F27C405CED2C1CCE338 /* Pods_PasswordKeeper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27BF1CA2A63C4BC3CCF62BF7 /* Pods-PasswordKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordKeeper.debug.xcconfig"; path = "Target Support Files/Pods-PasswordKeeper/Pods-PasswordKeeper.debug.xcconfig"; sourceTree = "<group>"; };
+		3FA85827D4850CD03D96A518 /* Pods-PasswordKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordKeeper.release.xcconfig"; path = "Target Support Files/Pods-PasswordKeeper/Pods-PasswordKeeper.release.xcconfig"; sourceTree = "<group>"; };
+		4FBC00002443B93F00450D33 /* SaveAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAccount.swift; sourceTree = "<group>"; };
+		4FBC0002244F3A7B00450D33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4FBC00042451D19B00450D33 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		4FBCFFE3244383EF00450D33 /* PasswordKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FBCFFE6244383EF00450D33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FBCFFE8244383EF00450D33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,8 @@
 		4FBCFFEF244383F500450D33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4FBCFFF2244383F500450D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FBCFFF4244383F500450D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FBCFFFD2443B8DD00450D33 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		66137F27C405CED2C1CCE338 /* Pods_PasswordKeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordKeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				582DAB81BE4AD01966BC012A /* Pods_PasswordKeeper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FBC00062451D1A300450D33 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4FBC00042451D19B00450D33 /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		4FBCFFDA244383EF00450D33 = {
 			isa = PBXGroup;
 			children = (
-				4FBCFFE5244383EF00450D33 /* PasswordKeeper */,
 				4FBCFFE4244383EF00450D33 /* Products */,
+				4FBCFFE5244383EF00450D33 /* PasswordKeeper */,
+				C4A59DD66419FEAB340E585B /* Pods */,
+				6C199EAE7AB7BF6A1307C227 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +79,15 @@
 		4FBCFFE5244383EF00450D33 /* PasswordKeeper */ = {
 			isa = PBXGroup;
 			children = (
+				4FBCFFFA2443B88E00450D33 /* models */,
 				4FBCFFE6244383EF00450D33 /* AppDelegate.swift */,
 				4FBCFFE8244383EF00450D33 /* SceneDelegate.swift */,
-				4FBCFFEA244383EF00450D33 /* ContentView.swift */,
+				4FBCFFFF2443B90A00450D33 /* views */,
 				4FBCFFEC244383F500450D33 /* Assets.xcassets */,
 				4FBCFFF1244383F500450D33 /* LaunchScreen.storyboard */,
 				4FBCFFF4244383F500450D33 /* Info.plist */,
+				4FBC0002244F3A7B00450D33 /* GoogleService-Info.plist */,
+				4FBC00062451D1A300450D33 /* Networking */,
 				4FBCFFEE244383F500450D33 /* Preview Content */,
 			);
 			path = PasswordKeeper;
@@ -75,6 +101,40 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4FBCFFFA2443B88E00450D33 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				4FBCFFFD2443B8DD00450D33 /* Account.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		4FBCFFFF2443B90A00450D33 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				4FBCFFEA244383EF00450D33 /* ContentView.swift */,
+				4FBC00002443B93F00450D33 /* SaveAccount.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		6C199EAE7AB7BF6A1307C227 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66137F27C405CED2C1CCE338 /* Pods_PasswordKeeper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4A59DD66419FEAB340E585B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27BF1CA2A63C4BC3CCF62BF7 /* Pods-PasswordKeeper.debug.xcconfig */,
+				3FA85827D4850CD03D96A518 /* Pods-PasswordKeeper.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FBCFFF7244383F500450D33 /* Build configuration list for PBXNativeTarget "PasswordKeeper" */;
 			buildPhases = (
+				C7A32160D26C4094AF2A9F45 /* [CP] Check Pods Manifest.lock */,
 				4FBCFFDF244383EF00450D33 /* Sources */,
 				4FBCFFE0244383EF00450D33 /* Frameworks */,
 				4FBCFFE1244383EF00450D33 /* Resources */,
+				48B4ADC54407A8509B0E3F03 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FBCFFF3244383F500450D33 /* LaunchScreen.storyboard in Resources */,
+				4FBC0003244F3A7B00450D33 /* GoogleService-Info.plist in Resources */,
 				4FBCFFF0244383F500450D33 /* Preview Assets.xcassets in Resources */,
 				4FBCFFED244383F500450D33 /* Assets.xcassets in Resources */,
 			);
@@ -141,14 +204,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		48B4ADC54407A8509B0E3F03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PasswordKeeper/Pods-PasswordKeeper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PasswordKeeper/Pods-PasswordKeeper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PasswordKeeper/Pods-PasswordKeeper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7A32160D26C4094AF2A9F45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PasswordKeeper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4FBCFFDF244383EF00450D33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4FBCFFE7244383EF00450D33 /* AppDelegate.swift in Sources */,
+				4FBCFFFE2443B8DD00450D33 /* Account.swift in Sources */,
 				4FBCFFE9244383EF00450D33 /* SceneDelegate.swift in Sources */,
+				4FBC00052451D19B00450D33 /* Networking.swift in Sources */,
 				4FBCFFEB244383EF00450D33 /* ContentView.swift in Sources */,
+				4FBC00012443B93F00450D33 /* SaveAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +390,7 @@
 		};
 		4FBCFFF8244383F500450D33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27BF1CA2A63C4BC3CCF62BF7 /* Pods-PasswordKeeper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +410,7 @@
 		};
 		4FBCFFF9244383F500450D33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FA85827D4850CD03D96A518 /* Pods-PasswordKeeper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
